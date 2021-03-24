@@ -39,6 +39,7 @@ header{
 
 .hamburger{
     position: fixed;/*fixed fijo en toda la pagina*/
+    z-index: 10;
     top: 30px;
     right: 30px;
     background: #fff;
@@ -60,12 +61,12 @@ header{
     justify-content: space-evenly;
     align-items: center;
     transition: transform .3s ease-in-out;
-    transform: translate(110%);
+    transform: translate(100%);
     box-shadow: 0 0 6px  rgba(0, 0, 0, 0.5) ;
 }
 
-spread{
-    transform: translate(0);
+.spread{
+    transform: translate(0%);
 }
 
 .menu-navegacion{
@@ -253,7 +254,7 @@ spread{
      width: 60px;
      height: 60px;
      border: 1px solid #fff;
-     border-radius: 80%;
+     border-radius: 50%;
      text-align: center;
      color: #fff 
  }
@@ -328,5 +329,98 @@ spread{
          text-align: center;
          width: 80%;
          margin-bottom: 40px;
+     }
+ }
+ @media  screen and (max-width:800px){
+     .menu-navegacion{
+         width: 50vw;
+     }
+
+     .titulo{
+         font-size: 40px;
+     }
+
+     .contenedor-servicio img{
+         width: 80%;
+         margin-bottom: 40px;
+     }
+
+     .checklist-servicio{
+         width: 80%;
+     }
+
+     .service{
+         margin-bottom: 30px;
+     }
+
+     .agregar-imagen{
+         width: 80%;
+     }
+
+     .img-galeria{
+         width: 45%;
+     }
+
+     .cont-expert{
+         width: 80%;
+     }
+
+     .footer-content{ /*al parecer hay un problema ya que solo afecto a los icons*/
+         justify-content: center;
+     }
+
+     .social-media-icon{
+         margin-left: 1;
+     }
+
+     .social-media{
+         width: 80%;
+         justify-content: space-evenly;
+     }
+
+     .social-media i{
+         margin-left: 0;
+     }
+
+     .contact-us{ /*este es para el texto*/
+         text-align: center;
+         width: 80%;
+         margin-bottom: 40px;
+     }
+ }
+
+ @media screen and (max-width:500px){
+     .menu-navegacion{
+         width: 65%vw;
+     }
+
+     .hamburger{
+         top: 20px;
+         right: 20px;
+     }
+
+
+     .titulo{
+         font-size: 30px;
+     }
+
+     .subtitulo{
+         font-size: 30px;
+     }
+
+     .agregar-imagen{
+        width: 95%;
+     }
+
+     .img-galeria{
+         width: 95%;
+     }
+
+     .social-media{
+         width: 100%;
+     }
+
+     .contact-us{
+         width: 90%;
      }
  }
