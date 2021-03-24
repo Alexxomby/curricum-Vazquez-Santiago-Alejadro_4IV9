@@ -27,6 +27,7 @@ header{
     background-position: center ;
 }
 .head{
+    text-align: center;
     padding: 0;
     height:100%;
     display: flex;
@@ -93,6 +94,7 @@ spread{
 }
 
 .contenedor-servicio{
+  /*  justify-content: c posibilidad*/
     display: flex;
     justify-self: space-evenly;
     align-items: center;
@@ -138,6 +140,7 @@ spread{
 }
 
 .img-galeria{
+    object-fit: cover;
     width: 30%;
     display: block;
     margin-bottom: 15px;
@@ -163,6 +166,7 @@ spread{
 }
 
 .agregar-imagen{
+    object-fit: cover;
     width: 60%;
     border-radius: 10px;
     transform: scale(0);
@@ -222,8 +226,10 @@ spread{
  }
 
  .contact-us{
-     width: 40%;
+     text-align: center;/*posibilidad*/
+     width: 50%;
      color: #fff;
+     margin-bottom: 40px;
  }
 
  .brand{
@@ -236,7 +242,7 @@ spread{
  }
 
  .socialmedia{
-     width: 80%;        /**/
+     width: 75%;        /**/
      display: flex;
      justify-content: flex-end;
  }
@@ -269,5 +275,58 @@ spread{
  .social-media-icon i{
      font-size: 30px;
      line-height: 60px;
+ }
 
+ @media  screen and (max-width:800px){
+     .menu-navegacion{
+         width: 50vw;
+     }
+
+     .titulo{
+         font-size: 40px;
+     }
+
+     .contenedor-servicio img{
+         width: 80%;
+         margin-bottom: 40px;
+     }
+
+     .checklist-servicio{
+         width: 80%;
+     }
+
+     .service{
+         margin-bottom: 30px;
+     }
+
+     .agregar-imagen{
+         width: 80%;
+     }
+
+     .img-galeria{
+         width: 45%;
+     }
+
+     .cont-expert{
+         width: 80%;
+     }
+
+     .footer-content{ /*al parecer hay un problema ya que solo afecto a los icons*/
+         justify-content: center;
+     }
+     
+     .social-media{
+         width: 80%;
+         justify-content: space-evenly;
+     }
+
+     .social-media i{
+         margin-left: 0;
+     }
+
+     .contact-us{ /*este es para el texto*/
+         text-align: center;
+         width: 80%;
+         margin-bottom: 40px;
+     }
  }
