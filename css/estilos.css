@@ -39,7 +39,7 @@ header{
 
 .hamburger{
     position: fixed;/*fixed fijo en toda la pagina*/
-    z-index: 10;
+  
     top: 30px;
     right: 30px;
     background: #fff;
