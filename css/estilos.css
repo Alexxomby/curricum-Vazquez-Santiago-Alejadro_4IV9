@@ -20,7 +20,7 @@ body{
 
 header{
     height: 100vh;
-    background-image: linear-gradient(120deg, rgba(166, 192, 254, 0.39) 0%, rgba(246, 128, 132, 0.39) 100%), url(../img/woman.jpg);
+    background-image: linear-gradient(120deg, rgba(171, 85, 241, 0.39) 0%, rgba(125, 203, 248, 0.39) 100%), url(../img/woman.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
